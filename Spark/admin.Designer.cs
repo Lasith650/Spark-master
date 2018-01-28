@@ -96,6 +96,9 @@
             this.payementBTN = new System.Windows.Forms.Label();
             this.edituserLBL1 = new System.Windows.Forms.Label();
             this.editUserLBL = new System.Windows.Forms.Label();
+            this.minimumLBL = new System.Windows.Forms.Label();
+            this.minimumTB = new System.Windows.Forms.TextBox();
+            this.changeminBTN = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.quotationDG)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,10 +109,10 @@
             this.changePricelbl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.changePricelbl.Font = new System.Drawing.Font("Raleway Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.changePricelbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.changePricelbl.Location = new System.Drawing.Point(7, 446);
+            this.changePricelbl.Location = new System.Drawing.Point(2, 459);
             this.changePricelbl.Margin = new System.Windows.Forms.Padding(0);
             this.changePricelbl.Name = "changePricelbl";
-            this.changePricelbl.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.changePricelbl.Padding = new System.Windows.Forms.Padding(2);
             this.changePricelbl.Size = new System.Drawing.Size(112, 25);
             this.changePricelbl.TabIndex = 106;
             this.changePricelbl.Text = "Change Price";
@@ -132,7 +135,7 @@
             // 
             this.priceTB.Font = new System.Drawing.Font("Raleway", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.priceTB.Location = new System.Drawing.Point(118, 345);
-            this.priceTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.priceTB.Margin = new System.Windows.Forms.Padding(2);
             this.priceTB.Name = "priceTB";
             this.priceTB.Size = new System.Drawing.Size(119, 22);
             this.priceTB.TabIndex = 104;
@@ -258,7 +261,7 @@
             this.parttypeCB.FormattingEnabled = true;
             this.parttypeCB.IntegralHeight = false;
             this.parttypeCB.Location = new System.Drawing.Point(26, 222);
-            this.parttypeCB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.parttypeCB.Margin = new System.Windows.Forms.Padding(2);
             this.parttypeCB.Name = "parttypeCB";
             this.parttypeCB.Size = new System.Drawing.Size(151, 27);
             this.parttypeCB.TabIndex = 93;
@@ -271,7 +274,7 @@
             this.modelnameCB.FormattingEnabled = true;
             this.modelnameCB.IntegralHeight = false;
             this.modelnameCB.Location = new System.Drawing.Point(26, 167);
-            this.modelnameCB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.modelnameCB.Margin = new System.Windows.Forms.Padding(2);
             this.modelnameCB.Name = "modelnameCB";
             this.modelnameCB.Size = new System.Drawing.Size(151, 27);
             this.modelnameCB.TabIndex = 92;
@@ -284,7 +287,7 @@
             this.brandnameCB.FormattingEnabled = true;
             this.brandnameCB.IntegralHeight = false;
             this.brandnameCB.Location = new System.Drawing.Point(26, 114);
-            this.brandnameCB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.brandnameCB.Margin = new System.Windows.Forms.Padding(2);
             this.brandnameCB.Name = "brandnameCB";
             this.brandnameCB.Size = new System.Drawing.Size(151, 27);
             this.brandnameCB.TabIndex = 91;
@@ -335,7 +338,7 @@
             this.addsuppplierlbl.Location = new System.Drawing.Point(631, 31);
             this.addsuppplierlbl.Margin = new System.Windows.Forms.Padding(0);
             this.addsuppplierlbl.Name = "addsuppplierlbl";
-            this.addsuppplierlbl.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addsuppplierlbl.Padding = new System.Windows.Forms.Padding(2);
             this.addsuppplierlbl.Size = new System.Drawing.Size(95, 23);
             this.addsuppplierlbl.TabIndex = 87;
             this.addsuppplierlbl.Text = "Add a User";
@@ -376,7 +379,7 @@
             this.logoutlbl1.Location = new System.Drawing.Point(651, 4);
             this.logoutlbl1.Margin = new System.Windows.Forms.Padding(0);
             this.logoutlbl1.Name = "logoutlbl1";
-            this.logoutlbl1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.logoutlbl1.Padding = new System.Windows.Forms.Padding(2);
             this.logoutlbl1.Size = new System.Drawing.Size(71, 23);
             this.logoutlbl1.TabIndex = 84;
             this.logoutlbl1.Text = "Log Out";
@@ -500,7 +503,7 @@
             // 
             this.brandnameaddTB.Font = new System.Drawing.Font("Raleway", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.brandnameaddTB.Location = new System.Drawing.Point(264, 115);
-            this.brandnameaddTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.brandnameaddTB.Margin = new System.Windows.Forms.Padding(2);
             this.brandnameaddTB.MinimumSize = new System.Drawing.Size(130, 38);
             this.brandnameaddTB.Name = "brandnameaddTB";
             this.brandnameaddTB.Size = new System.Drawing.Size(130, 29);
@@ -561,7 +564,7 @@
             // 
             this.addmodelTB.Font = new System.Drawing.Font("Raleway", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addmodelTB.Location = new System.Drawing.Point(506, 176);
-            this.addmodelTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addmodelTB.Margin = new System.Windows.Forms.Padding(2);
             this.addmodelTB.MinimumSize = new System.Drawing.Size(130, 38);
             this.addmodelTB.Name = "addmodelTB";
             this.addmodelTB.Size = new System.Drawing.Size(130, 29);
@@ -610,7 +613,7 @@
             // 
             this.addpartTB.Font = new System.Drawing.Font("Raleway", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addpartTB.Location = new System.Drawing.Point(506, 114);
-            this.addpartTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addpartTB.Margin = new System.Windows.Forms.Padding(2);
             this.addpartTB.MinimumSize = new System.Drawing.Size(130, 38);
             this.addpartTB.Name = "addpartTB";
             this.addpartTB.Size = new System.Drawing.Size(130, 29);
@@ -638,7 +641,7 @@
             this.modelchangebrandnamecmb.FormattingEnabled = true;
             this.modelchangebrandnamecmb.IntegralHeight = false;
             this.modelchangebrandnamecmb.Location = new System.Drawing.Point(264, 177);
-            this.modelchangebrandnamecmb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.modelchangebrandnamecmb.Margin = new System.Windows.Forms.Padding(2);
             this.modelchangebrandnamecmb.Name = "modelchangebrandnamecmb";
             this.modelchangebrandnamecmb.Size = new System.Drawing.Size(239, 29);
             this.modelchangebrandnamecmb.TabIndex = 119;
@@ -661,7 +664,7 @@
             this.pricechangedNotification.BackColor = System.Drawing.Color.Transparent;
             this.pricechangedNotification.Font = new System.Drawing.Font("Raleway", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pricechangedNotification.ForeColor = System.Drawing.Color.Black;
-            this.pricechangedNotification.Location = new System.Drawing.Point(17, 475);
+            this.pricechangedNotification.Location = new System.Drawing.Point(11, 484);
             this.pricechangedNotification.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.pricechangedNotification.Name = "pricechangedNotification";
             this.pricechangedNotification.Size = new System.Drawing.Size(88, 14);
@@ -673,7 +676,7 @@
             // 
             this.discountTB.Font = new System.Drawing.Font("Raleway", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.discountTB.Location = new System.Drawing.Point(118, 403);
-            this.discountTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.discountTB.Margin = new System.Windows.Forms.Padding(2);
             this.discountTB.Name = "discountTB";
             this.discountTB.Size = new System.Drawing.Size(119, 22);
             this.discountTB.TabIndex = 123;
@@ -696,7 +699,7 @@
             this.discountChangedlbl.BackColor = System.Drawing.Color.Transparent;
             this.discountChangedlbl.Font = new System.Drawing.Font("Raleway", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.discountChangedlbl.ForeColor = System.Drawing.Color.Black;
-            this.discountChangedlbl.Location = new System.Drawing.Point(116, 475);
+            this.discountChangedlbl.Location = new System.Drawing.Point(115, 484);
             this.discountChangedlbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.discountChangedlbl.Name = "discountChangedlbl";
             this.discountChangedlbl.Size = new System.Drawing.Size(139, 14);
@@ -711,10 +714,10 @@
             this.changeDiscountbtn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.changeDiscountbtn.Font = new System.Drawing.Font("Raleway Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.changeDiscountbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.changeDiscountbtn.Location = new System.Drawing.Point(114, 446);
+            this.changeDiscountbtn.Location = new System.Drawing.Point(111, 459);
             this.changeDiscountbtn.Margin = new System.Windows.Forms.Padding(0);
             this.changeDiscountbtn.Name = "changeDiscountbtn";
-            this.changeDiscountbtn.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.changeDiscountbtn.Padding = new System.Windows.Forms.Padding(2);
             this.changeDiscountbtn.Size = new System.Drawing.Size(143, 25);
             this.changeDiscountbtn.TabIndex = 124;
             this.changeDiscountbtn.Text = "Change Discount ";
@@ -738,7 +741,7 @@
             this.Column10,
             this.Column8});
             this.quotationDG.Location = new System.Drawing.Point(266, 243);
-            this.quotationDG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.quotationDG.Margin = new System.Windows.Forms.Padding(2);
             this.quotationDG.Name = "quotationDG";
             this.quotationDG.RowTemplate.Height = 24;
             this.quotationDG.Size = new System.Drawing.Size(472, 206);
@@ -804,7 +807,7 @@
             this.acceptQuotation.Location = new System.Drawing.Point(603, 453);
             this.acceptQuotation.Margin = new System.Windows.Forms.Padding(0);
             this.acceptQuotation.Name = "acceptQuotation";
-            this.acceptQuotation.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.acceptQuotation.Padding = new System.Windows.Forms.Padding(2);
             this.acceptQuotation.Size = new System.Drawing.Size(142, 25);
             this.acceptQuotation.TabIndex = 127;
             this.acceptQuotation.Text = "Accept Quotation";
@@ -820,7 +823,7 @@
             this.removequotationlbl.Location = new System.Drawing.Point(460, 453);
             this.removequotationlbl.Margin = new System.Windows.Forms.Padding(0);
             this.removequotationlbl.Name = "removequotationlbl";
-            this.removequotationlbl.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.removequotationlbl.Padding = new System.Windows.Forms.Padding(2);
             this.removequotationlbl.Size = new System.Drawing.Size(149, 25);
             this.removequotationlbl.TabIndex = 128;
             this.removequotationlbl.Text = "Remove Quotation";
@@ -830,7 +833,7 @@
             // 
             this.paymentTB.Font = new System.Drawing.Font("Raleway", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.paymentTB.Location = new System.Drawing.Point(266, 454);
-            this.paymentTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.paymentTB.Margin = new System.Windows.Forms.Padding(2);
             this.paymentTB.Name = "paymentTB";
             this.paymentTB.Size = new System.Drawing.Size(119, 26);
             this.paymentTB.TabIndex = 129;
@@ -858,7 +861,7 @@
             this.edituserLBL1.Location = new System.Drawing.Point(644, 57);
             this.edituserLBL1.Margin = new System.Windows.Forms.Padding(0);
             this.edituserLBL1.Name = "edituserLBL1";
-            this.edituserLBL1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.edituserLBL1.Padding = new System.Windows.Forms.Padding(2);
             this.edituserLBL1.Size = new System.Drawing.Size(79, 23);
             this.edituserLBL1.TabIndex = 132;
             this.edituserLBL1.Text = "Edit User";
@@ -878,12 +881,47 @@
             this.editUserLBL.TabIndex = 131;
             this.editUserLBL.Click += new System.EventHandler(this.editUserLBL_Click);
             // 
+            // minimumLBL
+            // 
+            this.minimumLBL.AutoSize = true;
+            this.minimumLBL.BackColor = System.Drawing.Color.Transparent;
+            this.minimumLBL.Font = new System.Drawing.Font("Raleway", 9F);
+            this.minimumLBL.Location = new System.Drawing.Point(3, 436);
+            this.minimumLBL.Name = "minimumLBL";
+            this.minimumLBL.Size = new System.Drawing.Size(0, 14);
+            this.minimumLBL.TabIndex = 133;
+            // 
+            // minimumTB
+            // 
+            this.minimumTB.Font = new System.Drawing.Font("Raleway", 9F);
+            this.minimumTB.Location = new System.Drawing.Point(118, 432);
+            this.minimumTB.Name = "minimumTB";
+            this.minimumTB.Size = new System.Drawing.Size(44, 22);
+            this.minimumTB.TabIndex = 134;
+            this.minimumTB.Visible = false;
+            // 
+            // changeminBTN
+            // 
+            this.changeminBTN.BackColor = System.Drawing.Color.Transparent;
+            this.changeminBTN.Font = new System.Drawing.Font("Raleway", 9F);
+            this.changeminBTN.Location = new System.Drawing.Point(169, 431);
+            this.changeminBTN.Name = "changeminBTN";
+            this.changeminBTN.Size = new System.Drawing.Size(68, 23);
+            this.changeminBTN.TabIndex = 135;
+            this.changeminBTN.Text = "ADD";
+            this.changeminBTN.UseVisualStyleBackColor = false;
+            this.changeminBTN.Visible = false;
+            this.changeminBTN.Click += new System.EventHandler(this.changeminBTN_Click);
+            // 
             // admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(746, 498);
+            this.Controls.Add(this.changeminBTN);
+            this.Controls.Add(this.minimumTB);
+            this.Controls.Add(this.minimumLBL);
             this.Controls.Add(this.edituserLBL1);
             this.Controls.Add(this.editUserLBL);
             this.Controls.Add(this.payementBTN);
@@ -943,10 +981,11 @@
             this.Controls.Add(this.mainLogo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "admin";
+            this.Load += new System.EventHandler(this.admin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.quotationDG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1022,5 +1061,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.Label edituserLBL1;
         private System.Windows.Forms.Label editUserLBL;
+        private System.Windows.Forms.Label minimumLBL;
+        private System.Windows.Forms.TextBox minimumTB;
+        private System.Windows.Forms.Button changeminBTN;
     }
 }

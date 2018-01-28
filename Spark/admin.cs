@@ -166,6 +166,11 @@ namespace Spark
                         discountTB.Text = row["discountRate"].ToString();
                         discountTB.Visible = true;
                         changeDiscountbtn.Visible = true;
+
+                        minimumLBL.Text = "Minimum Level";
+                        minimumTB.Text = row["minlevel"].ToString();
+                        minimumTB.Visible = true;
+                        changeminBTN.Visible = true;
                     }
                 }
                 else
@@ -183,6 +188,9 @@ namespace Spark
                     priceTB.Visible = false;
                     discountlLBL.Text = "";
                     discountTB.Visible = false;
+                    minimumLBL.Text = "";
+                    minimumTB.Visible = false;
+                    changeminBTN.Visible = false;
                     changePricelbl.Visible = false;
                     changeDiscountbtn.Visible = false;
                     discountChangedlbl.Visible = false;
@@ -487,6 +495,28 @@ namespace Spark
         private void mainLogo_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void admin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void changeminBTN_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SqlConnection sqlConn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Hashika\Desktop\Spark-master\Spark\spark_database.mdf;Integrated Security=True");
+                sqlConn.Open();
+                string query = "UPDATE carParts set minlevel='" + minimumTB.Text.ToString() + "' where carBrand='" + brandnametxt.Text.ToString() + "'and carModel='" + modelnametxt.Text.ToString() + "' and carPartName='" + parttypetxt.Text.ToString() + "'";
+                SqlCommand data = new SqlCommand(query, sqlConn);
+                data.ExecuteNonQuery();
+                //discountChangedlbl.Visible = true;
+            }
+            catch (SqlException error)
+            {
+                MessageBox.Show(error.ToString());
+            }
         }
     }
 }
