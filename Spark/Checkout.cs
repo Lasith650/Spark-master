@@ -37,7 +37,7 @@ namespace Spark
         private void goBack_Click(object sender, EventArgs e)
         {
             SqlConnection sqlConn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Hashika\Desktop\Spark-master\Spark\spark_database.mdf;Integrated Security=True");
-            string query = "SELECT * FROM tbluser where username='" + username +"'";
+            string query = "SELECT * FROM tbluser where username='" + username + "'";
             SqlDataAdapter data = new SqlDataAdapter(query, sqlConn);
             DataTable dtbl = new DataTable();
             data.Fill(dtbl);
@@ -49,7 +49,7 @@ namespace Spark
                     type = Convert.ToInt16(row["type"].ToString());
 
                 }
-                if (type == 1 | type==2)
+                if (type == 1 | type == 2)
                 {
                     //if it is cashier
                     this.Hide();
@@ -69,7 +69,7 @@ namespace Spark
                     specialcustomer.ShowDialog();
                     this.Close();
                 }
-               
+
             }
         }
 
@@ -114,7 +114,7 @@ namespace Spark
                 {
                     //insert into payments table
                     int stock = 0;
-                    string query = "INSERT INTO payments(carBrand, carModel, partName, quantity, price, userId) VALUES('" + checkoutDataGrid.Rows[i].Cells[0].Value.ToString() + "','" + checkoutDataGrid.Rows[i].Cells[1].Value.ToString() + "','" + checkoutDataGrid.Rows[i].Cells[2].Value.ToString() + "','" + checkoutDataGrid.Rows[i].Cells[3].Value.ToString() + "','" + checkoutDataGrid.Rows[i].Cells[4].Value.ToString() + "',CalculateUsrId())";
+                    string query = "INSERT INTO payments(carBrand, carModel, partName, quantity, price) VALUES('" + checkoutDataGrid.Rows[i].Cells[0].Value.ToString() + "','" + checkoutDataGrid.Rows[i].Cells[1].Value.ToString() + "','" + checkoutDataGrid.Rows[i].Cells[2].Value.ToString() + "','" + checkoutDataGrid.Rows[i].Cells[3].Value.ToString() + "','" + checkoutDataGrid.Rows[i].Cells[4].Value.ToString() + "')";
                     SqlCommand data = new SqlCommand(query, sqlConn);
                     data.ExecuteNonQuery();
 
@@ -171,41 +171,14 @@ namespace Spark
             }
         }
 
-        private void checkoutDocument_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
-        {
-            e.Graphics.DrawImage(bitmap, 0, 0);
-        }
-
-        private void confirmpay1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void confirmpay1_Click_1(object sender, EventArgs e)
         {
 
         }
-        private int CalculateUsrId()
+
+        private void checkoutDocument_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            SqlConnection sqlConn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Hashika\Desktop\Spark-master\Spark\spark_database.mdf;Integrated Security=True");
-            sqlConn.Open();
-            DataTable dt = new DataTable();
-            string query = "select * from tbluser where telephone = textBox1.Text";
-            SqlDataAdapter data1 = new SqlDataAdapter(query, sqlConn);
-            DataTable dtbl = new DataTable();
-            int type = 0;
-
-            if (dtbl.Rows.Count != 0)
-            {
-                foreach (DataRow row in dtbl.Rows)
-                {
-                    type = Convert.ToInt16(row["userId"].ToString());
-
-                }
-            }
-            sqlConn.Close();
-
-            return type;
+            e.Graphics.DrawImage(bitmap, 0, 0);
         }
     }
 }
