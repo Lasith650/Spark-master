@@ -19,11 +19,14 @@ namespace Spark
             //load adding values
             loadparttypeCB();
             loadBrandnameCB();
+           
         }
         Bitmap bitmap;
 
         bool additemModel = false;
         bool additemPart = false;
+        private double total;
+        private short status;
 
         private void logout_Click(object sender, EventArgs e)
         {
@@ -121,10 +124,11 @@ namespace Spark
                 string query2 = "UPDATE carParts set stock=" + stock + "where carBrand='" + brandnameCB.GetItemText(brandnameCB.SelectedItem.ToString()) + "'and carModel='" + modelnameCB.GetItemText(modelnameCB.SelectedItem.ToString()) + "'and carPartName='" + parttypeCB.GetItemText(parttypeCB.SelectedItem.ToString()) + "'";
                 SqlCommand data2 = new SqlCommand(query2, sqlConn);
                 data2.ExecuteNonQuery();*/
-
-
-
-                string query3 = "INSERT INTO supplierDetails(username,brandname,modelname,partname,quantity,price,date) values('" + username.Text + "','" + brandnameCB.GetItemText(brandnameCB.SelectedItem.ToString()) + "','" + modelnameCB.GetItemText(modelnameCB.SelectedItem.ToString()) + "','" + parttypeCB.GetItemText(parttypeCB.SelectedItem.ToString()) + "','" + quantityNUD.Value.ToString() + "','" + priceNUD.Value.ToString() + "','" + date.ToShortDateString() + "')";
+                
+                //calculating the total of the quatation
+                total = 0.00;
+                total += Convert.ToInt16(quantityNUD.Value.ToString()) * Convert.ToDouble(priceNUD.Value.ToString());
+                string query3 = "INSERT INTO supplierDetails(username,brandname,modelname,partname,quantity,price,date,total) values('" + username.Text + "','" + brandnameCB.GetItemText(brandnameCB.SelectedItem.ToString()) + "','" + modelnameCB.GetItemText(modelnameCB.SelectedItem.ToString()) + "','" + parttypeCB.GetItemText(parttypeCB.SelectedItem.ToString()) + "','" + quantityNUD.Value.ToString() + "','" + priceNUD.Value.ToString() + "','" + date.ToShortDateString() + "','"+ total+ "')";
                 SqlCommand data3 = new SqlCommand(query3, sqlConn);
                 data3.ExecuteNonQuery();
 
@@ -136,7 +140,7 @@ namespace Spark
                 SqlCommand data5 = new SqlCommand(query5, sqlConn);
                 data5.ExecuteNonQuery();*/
 
-                string query4 = "INSERT INTO supplierDetails(username,brandname,modelname,partname,quantity,price,date) values('" + username.Text + "','" + brandnameCB.GetItemText(brandnameCB.SelectedItem.ToString()) + "','" + modelnameCB.GetItemText(modelnameCB.SelectedItem.ToString()) + "','" + parttypeCB.GetItemText(parttypeCB.SelectedItem.ToString()) + "','" + quantityNUD.Value.ToString() + "','" + priceNUD.Value.ToString() + "','" + date.ToShortDateString() +"')";
+                string query4 = "INSERT INTO supplierDetails(username,brandname,modelname,partname,quantity,price,date,total) values('" + username.Text + "','" + brandnameCB.GetItemText(brandnameCB.SelectedItem.ToString()) + "','" + modelnameCB.GetItemText(modelnameCB.SelectedItem.ToString()) + "','" + parttypeCB.GetItemText(parttypeCB.SelectedItem.ToString()) + "','" + quantityNUD.Value.ToString() + "','" + priceNUD.Value.ToString() + "','" + date.ToShortDateString() + "','" + total + "')";
                 SqlCommand data4 = new SqlCommand(query4, sqlConn);
                 data4.ExecuteNonQuery();
             }
@@ -200,7 +204,13 @@ namespace Spark
             data.Fill(dtbl);
             foreach (DataRow row in dtbl.Rows)
             {
-                transactionDG.Rows.Add(row["brandname"], row["modelname"], row["partname"], row["quantity"], row["Date"], row["price"], row["paidValue"]);
+
+                //converting status 
+                //status = Convert.ToInt16(row["acceptstatus"].ToString());
+                // if (status == 0)
+                    
+
+                transactionDG.Rows.Add(row["brandname"], row["modelname"], row["partname"], row["quantity"], row["Date"], row["price"], row["total"], row["paidValue"], row["acceptstatus"]);
             }
 
         }

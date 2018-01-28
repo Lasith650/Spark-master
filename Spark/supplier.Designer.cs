@@ -37,13 +37,6 @@
             this.buyPartslbl = new System.Windows.Forms.Label();
             this.addIteNE = new System.Windows.Forms.Label();
             this.priceNUD = new System.Windows.Forms.NumericUpDown();
-            this.col7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.edituserlbl = new System.Windows.Forms.Label();
             this.transactionDG = new System.Windows.Forms.DataGridView();
             this.modelnameCB = new System.Windows.Forms.ComboBox();
@@ -67,6 +60,15 @@
             this.homeLogo = new System.Windows.Forms.Label();
             this.secondTitle = new System.Windows.Forms.Label();
             this.mainLogo = new System.Windows.Forms.Label();
+            this.col1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sum = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.acceptstatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.priceNUD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.transactionDG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quantityNUD)).BeginInit();
@@ -77,10 +79,11 @@
             this.editUsericon.AutoSize = true;
             this.editUsericon.BackColor = System.Drawing.Color.Transparent;
             this.editUsericon.Image = ((System.Drawing.Image)(resources.GetObject("editUsericon.Image")));
-            this.editUsericon.Location = new System.Drawing.Point(945, 37);
-            this.editUsericon.MinimumSize = new System.Drawing.Size(30, 30);
+            this.editUsericon.Location = new System.Drawing.Point(709, 30);
+            this.editUsericon.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.editUsericon.MinimumSize = new System.Drawing.Size(22, 24);
             this.editUsericon.Name = "editUsericon";
-            this.editUsericon.Size = new System.Drawing.Size(30, 30);
+            this.editUsericon.Size = new System.Drawing.Size(22, 24);
             this.editUsericon.TabIndex = 103;
             this.editUsericon.Click += new System.EventHandler(this.editUsericon_Click);
             // 
@@ -91,10 +94,11 @@
             this.loadDatalbl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.loadDatalbl.Font = new System.Drawing.Font("Raleway Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loadDatalbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.loadDatalbl.Location = new System.Drawing.Point(802, 473);
-            this.loadDatalbl.MinimumSize = new System.Drawing.Size(165, 2);
+            this.loadDatalbl.Location = new System.Drawing.Point(602, 384);
+            this.loadDatalbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.loadDatalbl.MinimumSize = new System.Drawing.Size(124, 2);
             this.loadDatalbl.Name = "loadDatalbl";
-            this.loadDatalbl.Size = new System.Drawing.Size(165, 26);
+            this.loadDatalbl.Size = new System.Drawing.Size(124, 21);
             this.loadDatalbl.TabIndex = 102;
             this.loadDatalbl.Text = "Load Data";
             this.loadDatalbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -121,10 +125,11 @@
             this.print.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.print.Font = new System.Drawing.Font("Raleway Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.print.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.print.Location = new System.Drawing.Point(801, 515);
-            this.print.MinimumSize = new System.Drawing.Size(165, 2);
+            this.print.Location = new System.Drawing.Point(601, 418);
+            this.print.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.print.MinimumSize = new System.Drawing.Size(124, 2);
             this.print.Name = "print";
-            this.print.Size = new System.Drawing.Size(165, 26);
+            this.print.Size = new System.Drawing.Size(124, 21);
             this.print.TabIndex = 101;
             this.print.Text = "Print";
             this.print.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -137,10 +142,11 @@
             this.buyPartslbl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.buyPartslbl.Font = new System.Drawing.Font("Raleway Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buyPartslbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buyPartslbl.Location = new System.Drawing.Point(34, 528);
-            this.buyPartslbl.MinimumSize = new System.Drawing.Size(165, 2);
+            this.buyPartslbl.Location = new System.Drawing.Point(26, 429);
+            this.buyPartslbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.buyPartslbl.MinimumSize = new System.Drawing.Size(124, 2);
             this.buyPartslbl.Name = "buyPartslbl";
-            this.buyPartslbl.Size = new System.Drawing.Size(165, 26);
+            this.buyPartslbl.Size = new System.Drawing.Size(124, 21);
             this.buyPartslbl.TabIndex = 100;
             this.buyPartslbl.Text = "Buy Parts";
             this.buyPartslbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -153,10 +159,11 @@
             this.addIteNE.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.addIteNE.Font = new System.Drawing.Font("Raleway Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addIteNE.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.addIteNE.Location = new System.Drawing.Point(34, 473);
-            this.addIteNE.MinimumSize = new System.Drawing.Size(165, 2);
+            this.addIteNE.Location = new System.Drawing.Point(26, 384);
+            this.addIteNE.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.addIteNE.MinimumSize = new System.Drawing.Size(124, 2);
             this.addIteNE.Name = "addIteNE";
-            this.addIteNE.Size = new System.Drawing.Size(165, 26);
+            this.addIteNE.Size = new System.Drawing.Size(124, 21);
             this.addIteNE.TabIndex = 99;
             this.addIteNE.Text = "Add Items";
             this.addIteNE.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -169,67 +176,16 @@
             0,
             0,
             0});
-            this.priceNUD.Location = new System.Drawing.Point(34, 426);
+            this.priceNUD.Location = new System.Drawing.Point(26, 346);
+            this.priceNUD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.priceNUD.Maximum = new decimal(new int[] {
             1410065408,
             2,
             0,
             0});
             this.priceNUD.Name = "priceNUD";
-            this.priceNUD.Size = new System.Drawing.Size(160, 31);
+            this.priceNUD.Size = new System.Drawing.Size(120, 26);
             this.priceNUD.TabIndex = 98;
-            // 
-            // col7
-            // 
-            this.col7.HeaderText = "Paid Value";
-            this.col7.Name = "col7";
-            this.col7.ReadOnly = true;
-            this.col7.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // col6
-            // 
-            this.col6.HeaderText = "Price For Part";
-            this.col6.Name = "col6";
-            this.col6.ReadOnly = true;
-            this.col6.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // col5
-            // 
-            this.col5.HeaderText = "Date Added";
-            this.col5.Name = "col5";
-            this.col5.ReadOnly = true;
-            this.col5.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // col4
-            // 
-            this.col4.HeaderText = "Quantity";
-            this.col4.Name = "col4";
-            this.col4.ReadOnly = true;
-            this.col4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.col4.Width = 80;
-            // 
-            // col3
-            // 
-            this.col3.HeaderText = "Part Name";
-            this.col3.Name = "col3";
-            this.col3.ReadOnly = true;
-            this.col3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // col2
-            // 
-            this.col2.HeaderText = "Model Name";
-            this.col2.Name = "col2";
-            this.col2.ReadOnly = true;
-            this.col2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.col2.Width = 120;
-            // 
-            // col1
-            // 
-            this.col1.HeaderText = "Brandname";
-            this.col1.Name = "col1";
-            this.col1.ReadOnly = true;
-            this.col1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.col1.Width = 90;
             // 
             // edituserlbl
             // 
@@ -237,11 +193,11 @@
             this.edituserlbl.BackColor = System.Drawing.Color.Gray;
             this.edituserlbl.Font = new System.Drawing.Font("Raleway Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.edituserlbl.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.edituserlbl.Location = new System.Drawing.Point(835, 37);
+            this.edituserlbl.Location = new System.Drawing.Point(626, 30);
             this.edituserlbl.Margin = new System.Windows.Forms.Padding(0);
             this.edituserlbl.Name = "edituserlbl";
-            this.edituserlbl.Padding = new System.Windows.Forms.Padding(3);
-            this.edituserlbl.Size = new System.Drawing.Size(112, 30);
+            this.edituserlbl.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.edituserlbl.Size = new System.Drawing.Size(90, 23);
             this.edituserlbl.TabIndex = 104;
             this.edituserlbl.Text = "Edit Profile";
             this.edituserlbl.Visible = false;
@@ -260,24 +216,27 @@
             this.col4,
             this.col5,
             this.col6,
-            this.col7});
-            this.transactionDG.Location = new System.Drawing.Point(243, 122);
+            this.sum,
+            this.col7,
+            this.acceptstatus});
+            this.transactionDG.Location = new System.Drawing.Point(182, 99);
+            this.transactionDG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.transactionDG.MultiSelect = false;
             this.transactionDG.Name = "transactionDG";
             this.transactionDG.ReadOnly = true;
             this.transactionDG.RowTemplate.Height = 24;
-            this.transactionDG.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.transactionDG.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.transactionDG.Size = new System.Drawing.Size(724, 335);
+            this.transactionDG.Size = new System.Drawing.Size(543, 272);
             this.transactionDG.TabIndex = 97;
             // 
             // modelnameCB
             // 
             this.modelnameCB.Font = new System.Drawing.Font("Raleway", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modelnameCB.FormattingEnabled = true;
-            this.modelnameCB.Location = new System.Drawing.Point(33, 237);
+            this.modelnameCB.Location = new System.Drawing.Point(25, 193);
+            this.modelnameCB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.modelnameCB.Name = "modelnameCB";
-            this.modelnameCB.Size = new System.Drawing.Size(160, 32);
+            this.modelnameCB.Size = new System.Drawing.Size(121, 27);
             this.modelnameCB.TabIndex = 96;
             this.modelnameCB.SelectedIndexChanged += new System.EventHandler(this.modelnameCB_SelectedIndexChanged);
             // 
@@ -288,10 +247,11 @@
             this.addItemLbl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.addItemLbl.Font = new System.Drawing.Font("Raleway Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addItemLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.addItemLbl.Location = new System.Drawing.Point(34, 473);
-            this.addItemLbl.MinimumSize = new System.Drawing.Size(165, 2);
+            this.addItemLbl.Location = new System.Drawing.Point(26, 384);
+            this.addItemLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.addItemLbl.MinimumSize = new System.Drawing.Size(124, 2);
             this.addItemLbl.Name = "addItemLbl";
-            this.addItemLbl.Size = new System.Drawing.Size(165, 26);
+            this.addItemLbl.Size = new System.Drawing.Size(124, 21);
             this.addItemLbl.TabIndex = 95;
             this.addItemLbl.Text = "Add Items";
             this.addItemLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -303,32 +263,35 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.Control;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(234, 121);
-            this.label6.MinimumSize = new System.Drawing.Size(2, 400);
+            this.label6.Location = new System.Drawing.Point(176, 98);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.MinimumSize = new System.Drawing.Size(2, 325);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(2, 400);
+            this.label6.Size = new System.Drawing.Size(2, 325);
             this.label6.TabIndex = 94;
             // 
             // quantityNUD
             // 
             this.quantityNUD.Font = new System.Drawing.Font("Raleway", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quantityNUD.Location = new System.Drawing.Point(35, 361);
+            this.quantityNUD.Location = new System.Drawing.Point(26, 293);
+            this.quantityNUD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.quantityNUD.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.quantityNUD.Name = "quantityNUD";
-            this.quantityNUD.Size = new System.Drawing.Size(160, 31);
+            this.quantityNUD.Size = new System.Drawing.Size(120, 26);
             this.quantityNUD.TabIndex = 93;
             // 
             // parttypeCB
             // 
             this.parttypeCB.Font = new System.Drawing.Font("Raleway", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.parttypeCB.FormattingEnabled = true;
-            this.parttypeCB.Location = new System.Drawing.Point(34, 297);
+            this.parttypeCB.Location = new System.Drawing.Point(26, 241);
+            this.parttypeCB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.parttypeCB.Name = "parttypeCB";
-            this.parttypeCB.Size = new System.Drawing.Size(160, 32);
+            this.parttypeCB.Size = new System.Drawing.Size(121, 27);
             this.parttypeCB.TabIndex = 92;
             this.parttypeCB.SelectedIndexChanged += new System.EventHandler(this.parttypeCB_SelectedIndexChanged);
             // 
@@ -337,9 +300,10 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Raleway", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(29, 408);
+            this.label5.Location = new System.Drawing.Point(22, 332);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 16);
+            this.label5.Size = new System.Drawing.Size(66, 13);
             this.label5.TabIndex = 91;
             this.label5.Text = "Price / Part";
             // 
@@ -348,9 +312,10 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Raleway", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(29, 343);
+            this.label4.Location = new System.Drawing.Point(22, 279);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 16);
+            this.label4.Size = new System.Drawing.Size(50, 13);
             this.label4.TabIndex = 90;
             this.label4.Text = "Quantity";
             // 
@@ -359,9 +324,10 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Raleway", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(30, 278);
+            this.label3.Location = new System.Drawing.Point(22, 226);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 16);
+            this.label3.Size = new System.Drawing.Size(56, 13);
             this.label3.TabIndex = 89;
             this.label3.Text = "Part Type";
             // 
@@ -370,9 +336,10 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Raleway", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(29, 218);
+            this.label2.Location = new System.Drawing.Point(22, 177);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 16);
+            this.label2.Size = new System.Drawing.Size(73, 13);
             this.label2.TabIndex = 88;
             this.label2.Text = "Model Name";
             // 
@@ -380,9 +347,10 @@
             // 
             this.brandnameCB.Font = new System.Drawing.Font("Raleway", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.brandnameCB.FormattingEnabled = true;
-            this.brandnameCB.Location = new System.Drawing.Point(34, 176);
+            this.brandnameCB.Location = new System.Drawing.Point(26, 143);
+            this.brandnameCB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.brandnameCB.Name = "brandnameCB";
-            this.brandnameCB.Size = new System.Drawing.Size(160, 32);
+            this.brandnameCB.Size = new System.Drawing.Size(121, 27);
             this.brandnameCB.TabIndex = 87;
             this.brandnameCB.SelectedIndexChanged += new System.EventHandler(this.brandnameCB_SelectedIndexChanged);
             // 
@@ -391,9 +359,10 @@
             this.brandnamelbl.AutoSize = true;
             this.brandnamelbl.BackColor = System.Drawing.Color.Transparent;
             this.brandnamelbl.Font = new System.Drawing.Font("Raleway", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.brandnamelbl.Location = new System.Drawing.Point(31, 158);
+            this.brandnamelbl.Location = new System.Drawing.Point(23, 128);
+            this.brandnamelbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.brandnamelbl.Name = "brandnamelbl";
-            this.brandnamelbl.Size = new System.Drawing.Size(91, 16);
+            this.brandnamelbl.Size = new System.Drawing.Size(70, 13);
             this.brandnamelbl.TabIndex = 86;
             this.brandnamelbl.Text = "Brand Name";
             // 
@@ -403,9 +372,10 @@
             this.adItemlbl.BackColor = System.Drawing.Color.Transparent;
             this.adItemlbl.Font = new System.Drawing.Font("Raleway Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.adItemlbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.adItemlbl.Location = new System.Drawing.Point(30, 121);
+            this.adItemlbl.Location = new System.Drawing.Point(22, 98);
+            this.adItemlbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.adItemlbl.Name = "adItemlbl";
-            this.adItemlbl.Size = new System.Drawing.Size(104, 24);
+            this.adItemlbl.Size = new System.Drawing.Size(85, 19);
             this.adItemlbl.TabIndex = 85;
             this.adItemlbl.Text = "Add Items";
             // 
@@ -415,11 +385,11 @@
             this.logoutlbl1.BackColor = System.Drawing.Color.Gray;
             this.logoutlbl1.Font = new System.Drawing.Font("Raleway Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logoutlbl1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.logoutlbl1.Location = new System.Drawing.Point(854, 4);
+            this.logoutlbl1.Location = new System.Drawing.Point(640, 3);
             this.logoutlbl1.Margin = new System.Windows.Forms.Padding(0);
             this.logoutlbl1.Name = "logoutlbl1";
-            this.logoutlbl1.Padding = new System.Windows.Forms.Padding(3);
-            this.logoutlbl1.Size = new System.Drawing.Size(90, 30);
+            this.logoutlbl1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.logoutlbl1.Size = new System.Drawing.Size(71, 23);
             this.logoutlbl1.TabIndex = 84;
             this.logoutlbl1.Text = "Log Out";
             this.logoutlbl1.Visible = false;
@@ -430,10 +400,11 @@
             this.logout.AutoSize = true;
             this.logout.BackColor = System.Drawing.Color.Transparent;
             this.logout.Image = ((System.Drawing.Image)(resources.GetObject("logout.Image")));
-            this.logout.Location = new System.Drawing.Point(945, 4);
-            this.logout.MinimumSize = new System.Drawing.Size(30, 30);
+            this.logout.Location = new System.Drawing.Point(709, 3);
+            this.logout.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.logout.MinimumSize = new System.Drawing.Size(22, 24);
             this.logout.Name = "logout";
-            this.logout.Size = new System.Drawing.Size(30, 30);
+            this.logout.Size = new System.Drawing.Size(22, 24);
             this.logout.TabIndex = 83;
             this.logout.Click += new System.EventHandler(this.logout_Click);
             // 
@@ -443,9 +414,10 @@
             this.username.BackColor = System.Drawing.Color.Transparent;
             this.username.Font = new System.Drawing.Font("Raleway Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.username.ForeColor = System.Drawing.Color.White;
-            this.username.Location = new System.Drawing.Point(826, 61);
+            this.username.Location = new System.Drawing.Point(620, 50);
+            this.username.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(0, 24);
+            this.username.Size = new System.Drawing.Size(0, 19);
             this.username.TabIndex = 82;
             // 
             // label1
@@ -454,9 +426,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Raleway Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(748, 64);
+            this.label1.Location = new System.Drawing.Point(561, 52);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 20);
+            this.label1.Size = new System.Drawing.Size(68, 16);
             this.label1.TabIndex = 81;
             this.label1.Text = "welcome";
             // 
@@ -465,10 +438,11 @@
             this.horizontalLine.AutoSize = true;
             this.horizontalLine.BackColor = System.Drawing.SystemColors.Control;
             this.horizontalLine.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.horizontalLine.Location = new System.Drawing.Point(242, 72);
-            this.horizontalLine.MinimumSize = new System.Drawing.Size(500, 0);
+            this.horizontalLine.Location = new System.Drawing.Point(182, 58);
+            this.horizontalLine.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.horizontalLine.MinimumSize = new System.Drawing.Size(375, 0);
             this.horizontalLine.Name = "horizontalLine";
-            this.horizontalLine.Size = new System.Drawing.Size(500, 4);
+            this.horizontalLine.Size = new System.Drawing.Size(375, 2);
             this.horizontalLine.TabIndex = 80;
             // 
             // homeText
@@ -476,9 +450,10 @@
             this.homeText.AutoSize = true;
             this.homeText.BackColor = System.Drawing.Color.Transparent;
             this.homeText.Font = new System.Drawing.Font("Raleway Light", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.homeText.Location = new System.Drawing.Point(297, 37);
+            this.homeText.Location = new System.Drawing.Point(223, 30);
+            this.homeText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.homeText.Name = "homeText";
-            this.homeText.Size = new System.Drawing.Size(213, 33);
+            this.homeText.Size = new System.Drawing.Size(171, 26);
             this.homeText.TabIndex = 79;
             this.homeText.Text = "Supplier Details";
             // 
@@ -487,10 +462,11 @@
             this.homeLogo.AutoSize = true;
             this.homeLogo.BackColor = System.Drawing.Color.Transparent;
             this.homeLogo.Image = ((System.Drawing.Image)(resources.GetObject("homeLogo.Image")));
-            this.homeLogo.Location = new System.Drawing.Point(240, 29);
-            this.homeLogo.MinimumSize = new System.Drawing.Size(50, 47);
+            this.homeLogo.Location = new System.Drawing.Point(180, 24);
+            this.homeLogo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.homeLogo.MinimumSize = new System.Drawing.Size(38, 38);
             this.homeLogo.Name = "homeLogo";
-            this.homeLogo.Size = new System.Drawing.Size(50, 47);
+            this.homeLogo.Size = new System.Drawing.Size(38, 38);
             this.homeLogo.TabIndex = 78;
             // 
             // secondTitle
@@ -498,9 +474,10 @@
             this.secondTitle.AutoSize = true;
             this.secondTitle.BackColor = System.Drawing.Color.Transparent;
             this.secondTitle.Font = new System.Drawing.Font("Rage Italic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.secondTitle.Location = new System.Drawing.Point(30, 71);
+            this.secondTitle.Location = new System.Drawing.Point(22, 58);
+            this.secondTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.secondTitle.Name = "secondTitle";
-            this.secondTitle.Size = new System.Drawing.Size(96, 21);
+            this.secondTitle.Size = new System.Drawing.Size(82, 18);
             this.secondTitle.TabIndex = 77;
             this.secondTitle.Text = "Get Sparked";
             // 
@@ -510,18 +487,85 @@
             this.mainLogo.BackColor = System.Drawing.Color.Transparent;
             this.mainLogo.ForeColor = System.Drawing.Color.Transparent;
             this.mainLogo.Image = ((System.Drawing.Image)(resources.GetObject("mainLogo.Image")));
-            this.mainLogo.Location = new System.Drawing.Point(2, -3);
-            this.mainLogo.MinimumSize = new System.Drawing.Size(240, 103);
+            this.mainLogo.Location = new System.Drawing.Point(2, -2);
+            this.mainLogo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.mainLogo.MinimumSize = new System.Drawing.Size(180, 84);
             this.mainLogo.Name = "mainLogo";
-            this.mainLogo.Size = new System.Drawing.Size(240, 103);
+            this.mainLogo.Size = new System.Drawing.Size(180, 84);
             this.mainLogo.TabIndex = 76;
+            // 
+            // col1
+            // 
+            this.col1.HeaderText = "Brandname";
+            this.col1.Name = "col1";
+            this.col1.ReadOnly = true;
+            this.col1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.col1.Width = 90;
+            // 
+            // col2
+            // 
+            this.col2.HeaderText = "Model Name";
+            this.col2.Name = "col2";
+            this.col2.ReadOnly = true;
+            this.col2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.col2.Width = 120;
+            // 
+            // col3
+            // 
+            this.col3.HeaderText = "Part Name";
+            this.col3.Name = "col3";
+            this.col3.ReadOnly = true;
+            this.col3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // col4
+            // 
+            this.col4.HeaderText = "Quantity";
+            this.col4.Name = "col4";
+            this.col4.ReadOnly = true;
+            this.col4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.col4.Width = 80;
+            // 
+            // col5
+            // 
+            this.col5.HeaderText = "Date Added";
+            this.col5.Name = "col5";
+            this.col5.ReadOnly = true;
+            this.col5.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // col6
+            // 
+            this.col6.HeaderText = "Price For Part";
+            this.col6.Name = "col6";
+            this.col6.ReadOnly = true;
+            this.col6.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // sum
+            // 
+            this.sum.HeaderText = "total";
+            this.sum.Name = "sum";
+            this.sum.ReadOnly = true;
+            this.sum.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // col7
+            // 
+            this.col7.HeaderText = "Paid Value";
+            this.col7.Name = "col7";
+            this.col7.ReadOnly = true;
+            this.col7.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // acceptstatus
+            // 
+            this.acceptstatus.HeaderText = "Status";
+            this.acceptstatus.Name = "acceptstatus";
+            this.acceptstatus.ReadOnly = true;
+            this.acceptstatus.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // supplier
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(976, 566);
+            this.ClientSize = new System.Drawing.Size(732, 460);
             this.Controls.Add(this.editUsericon);
             this.Controls.Add(this.loadDatalbl);
             this.Controls.Add(this.print);
@@ -553,6 +597,7 @@
             this.Controls.Add(this.mainLogo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "supplier";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "supplier";
@@ -574,13 +619,6 @@
         private System.Windows.Forms.Label buyPartslbl;
         private System.Windows.Forms.Label addIteNE;
         private System.Windows.Forms.NumericUpDown priceNUD;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col1;
         private System.Windows.Forms.Label edituserlbl;
         private System.Windows.Forms.DataGridView transactionDG;
         private System.Windows.Forms.ComboBox modelnameCB;
@@ -604,5 +642,14 @@
         private System.Windows.Forms.Label homeLogo;
         private System.Windows.Forms.Label secondTitle;
         private System.Windows.Forms.Label mainLogo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sum;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn acceptstatus;
     }
 }
